@@ -11,6 +11,10 @@
     width: 60px;
     height: 70px;
     } 
+     .form-control:focus{
+           outline-style: none;
+           box-shadow: none;
+        }
   </style>
 </head>
 <body>
@@ -21,10 +25,10 @@
     </div>
   <!--Input  line-->
     <div class="text-center d-flex justify-content-center align-items-center">
-        <input class="form-control form-control-lg me-3" type="number">
-        <input class="form-control form-control-lg me-3" type="number">
-        <input class="form-control form-control-lg me-3" type="number">
-        <input class="form-control form-control-lg" type="number">
+        <input type="number" class="form-control form-control-lg me-3" id="singleDigitInput" name="singleDigitInput" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        <input type="number" class="form-control form-control-lg me-3" id="singleDigitInput" name="singleDigitInput" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        <input type="number" class="form-control form-control-lg me-3" id="singleDigitInput" name="singleDigitInput" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        <input type="number" class="form-control form-control-lg me-3" id="singleDigitInput" name="singleDigitInput" min="0" max="9" maxlength="1" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
     </div>
   <!--Input line-->
 
